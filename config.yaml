@@ -1,0 +1,10 @@
+coverage: true 
+corpusDir: "echidna"
+testMode: assertion
+testLimit: 20000
+cryticArgs: [
+  "--compile-libraries=(CounterLibrary,0xf01)"
+]
+deployContracts: [
+  ["0xf01", "CounterLibrary"]
+]
